@@ -58,7 +58,7 @@ graph = build_graph_from_github_org(github_org_name, corresponding_ror_id, githu
 graph.serialize("graph.ttl")
 ```
 
-Run main.py to build a graph as described above or use the 'interactive_build_and_query.ipynb' notebook (recommended) for interactive building and visualization of the graph.
+**Run main.py to build a graph as described above or use the 'interactive_build_and_query.ipynb' notebook (recommended) for interactive building and visualization of the graph.**
 
 ### **3. Visualize the Graph**
 For PyVis visualization:
@@ -68,7 +68,7 @@ from visualizer import visualize_graph
 
 visualize_graph(graph)
 ```
-Use the 'interactive_build_and_query.ipynb' notebook for visualizing the graph.
+**Use the 'interactive_build_and_query.ipynb' notebook for visualizing the graph.**
 
 ---
 
