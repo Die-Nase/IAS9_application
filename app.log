@@ -1,0 +1,75 @@
+2024-12-12 11:26:04,824 - build_graph_logs - INFO - Starting the process to build an RDF graph for the GitHub organization: Materials-Data-Science-and-Informatics.
+2024-12-12 11:26:04,826 - build_graph_logs - INFO - Fetching organization data from ROR for ID: 02nv7yv05
+2024-12-12 11:26:04,826 - build_graph_logs - INFO - Starting query to ROR API for ROR ID: 02nv7yv05
+2024-12-12 11:26:04,826 - build_graph_logs - INFO - Starting request to https://api.ror.org/organizations/02nv7yv05 with headers: {'Accept': 'application/json'}
+2024-12-12 11:26:05,142 - build_graph_logs - INFO - Successfully fetched data from https://api.ror.org/organizations/02nv7yv05 (Status: 200)
+2024-12-12 11:26:05,142 - build_graph_logs - INFO - Successfully fetched ROR data for ROR ID: 02nv7yv05
+2024-12-12 11:26:07,053 - build_graph_logs - INFO - Fetching GitHub organization details for: Materials-Data-Science-and-Informatics
+2024-12-12 11:26:07,053 - build_graph_logs - INFO - Starting request to https://api.github.com/orgs/Materials-Data-Science-and-Informatics with headers: {'Authorization': '***HIDDEN***'}
+2024-12-12 11:26:07,373 - build_graph_logs - INFO - Successfully fetched data from https://api.github.com/orgs/Materials-Data-Science-and-Informatics (Status: 200)
+2024-12-12 11:26:07,373 - build_graph_logs - INFO - Fetching repositories for the organization: Materials-Data-Science-and-Informatics
+2024-12-12 11:26:07,373 - build_graph_logs - INFO - Starting request to https://api.github.com/orgs/Materials-Data-Science-and-Informatics/repos with headers: {'Authorization': '***HIDDEN***'}
+2024-12-12 11:26:08,635 - build_graph_logs - INFO - Successfully fetched data from https://api.github.com/orgs/Materials-Data-Science-and-Informatics/repos (Status: 200)
+2024-12-12 11:26:08,645 - build_graph_logs - INFO - Found 30 repositories for the organization.
+2024-12-12 11:26:08,645 - build_graph_logs - INFO - Processing repository: dislocation-ontology
+2024-12-12 11:26:08,645 - build_graph_logs - INFO - Starting request to https://api.github.com/repos/Materials-Data-Science-and-Informatics/dislocation-ontology/contributors with headers: {'Authorization': '***HIDDEN***'}
+2024-12-12 11:26:09,050 - build_graph_logs - INFO - Successfully fetched data from https://api.github.com/repos/Materials-Data-Science-and-Informatics/dislocation-ontology/contributors (Status: 200)
+2024-12-12 11:26:09,050 - build_graph_logs - INFO - Found 2 contributors for the repository: dislocation-ontology
+2024-12-12 11:26:09,050 - build_graph_logs - INFO - Starting request to https://api.github.com/users/az-ihsan with headers: {'Authorization': '***HIDDEN***'}
+2024-12-12 11:26:09,308 - build_graph_logs - INFO - Successfully fetched data from https://api.github.com/users/az-ihsan (Status: 200)
+2024-12-12 11:26:09,308 - build_graph_logs - INFO - Looking up ORCID for contributor: Ahmad Zainul Ihsan
+2024-12-12 11:26:09,308 - build_graph_logs - INFO - Starting request to https://pub.orcid.org/v3.0/search/?q=given-names:Ahmad Zainul+AND+family-name:Ihsan with headers: {'Accept': 'application/json', 'Authorization': '***HIDDEN***'}
+2024-12-12 11:26:09,824 - build_graph_logs - INFO - Successfully fetched data from https://pub.orcid.org/v3.0/search/?q=given-names:Ahmad Zainul+AND+family-name:Ihsan (Status: 200)
+2024-12-12 11:26:09,824 - build_graph_logs - INFO - Fetching ORCID data for: Ahmad Zainul Ihsan (0000-0002-1008-4530)
+2024-12-12 11:26:09,824 - build_graph_logs - INFO - Starting request to https://pub.orcid.org/v3.0/0000-0002-1008-4530 with headers: {'Accept': 'application/ld+json', 'Authorization': '***HIDDEN***'}
+2024-12-12 11:26:10,135 - build_graph_logs - INFO - Successfully fetched data from https://pub.orcid.org/v3.0/0000-0002-1008-4530 (Status: 200)
+2024-12-12 11:26:10,135 - build_graph_logs - INFO - Updating organization data for contributor: Ahmad Zainul Ihsan
+2024-12-12 11:26:10,135 - build_graph_logs - INFO - Starting to extract ROR for the organization: Technische Universität Bergakademie Freiberg
+2024-12-12 11:26:10,135 - build_graph_logs - INFO - Found identifier: {'@type': 'PropertyValue', 'propertyID': 'RINGGOLD', 'value': '26545'}
+2024-12-12 11:26:10,135 - build_graph_logs - INFO - Processing identifier with propertyID: RINGGOLD, value: 26545
+2024-12-12 11:26:10,135 - build_graph_logs - INFO - Identifier is a Ringgold identifier. Querying ROR for Ringgold: 26545
+2024-12-12 11:26:10,135 - build_graph_logs - INFO - Starting query for Ringgold ID 26545 in Wikidata.
+2024-12-12 11:26:10,135 - build_graph_logs - INFO - Starting request to https://query.wikidata.org/sparql with headers: {'User-Agent': 'Python script to query Wikidata for ROR using Ringgold', 'Accept': 'application/json'}
+2024-12-12 11:26:10,363 - build_graph_logs - INFO - Successfully fetched data from https://query.wikidata.org/sparql (Status: 200)
+2024-12-12 11:26:10,363 - build_graph_logs - INFO - Found ROR ID https://ror.org/031vc2293 for Ringgold ID 26545.
+2024-12-12 11:26:10,363 - build_graph_logs - INFO - Starting to extract ROR for the organization: Institut Teknologi Bandung
+2024-12-12 11:26:10,363 - build_graph_logs - INFO - Found identifier: {'@type': 'PropertyValue', 'propertyID': 'RINGGOLD', 'value': '89224'}
+2024-12-12 11:26:10,363 - build_graph_logs - INFO - Processing identifier with propertyID: RINGGOLD, value: 89224
+2024-12-12 11:26:10,363 - build_graph_logs - INFO - Identifier is a Ringgold identifier. Querying ROR for Ringgold: 89224
+2024-12-12 11:26:10,363 - build_graph_logs - INFO - Starting query for Ringgold ID 89224 in Wikidata.
+2024-12-12 11:26:10,363 - build_graph_logs - INFO - Starting request to https://query.wikidata.org/sparql with headers: {'User-Agent': 'Python script to query Wikidata for ROR using Ringgold', 'Accept': 'application/json'}
+2024-12-12 11:26:10,602 - build_graph_logs - INFO - Successfully fetched data from https://query.wikidata.org/sparql (Status: 200)
+2024-12-12 11:26:10,612 - build_graph_logs - INFO - Found ROR ID https://ror.org/00apj8t60 for Ringgold ID 89224.
+2024-12-12 11:26:10,612 - build_graph_logs - INFO - Starting to extract ROR for the organization: Forschungszentrum Jülich
+2024-12-12 11:26:10,612 - build_graph_logs - INFO - Found identifier: {'@type': 'PropertyValue', 'propertyID': 'ROR', 'value': 'https://ror.org/02nv7yv05'}
+2024-12-12 11:26:10,612 - build_graph_logs - INFO - Processing identifier with propertyID: ROR, value: https://ror.org/02nv7yv05
+2024-12-12 11:26:10,612 - build_graph_logs - INFO - Identifier is a ROR: https://ror.org/02nv7yv05
+2024-12-12 11:26:10,612 - build_graph_logs - INFO - Starting to extract ROR for the organization: Forschungszentrum Jülich GmbH
+2024-12-12 11:26:10,612 - build_graph_logs - INFO - Found identifier: {'@type': 'PropertyValue', 'propertyID': 'RINGGOLD', 'value': '28334'}
+2024-12-12 11:26:10,612 - build_graph_logs - INFO - Processing identifier with propertyID: RINGGOLD, value: 28334
+2024-12-12 11:26:10,612 - build_graph_logs - INFO - Identifier is a Ringgold identifier. Querying ROR for Ringgold: 28334
+2024-12-12 11:26:10,612 - build_graph_logs - INFO - Starting query for Ringgold ID 28334 in Wikidata.
+2024-12-12 11:26:10,612 - build_graph_logs - INFO - Starting request to https://query.wikidata.org/sparql with headers: {'User-Agent': 'Python script to query Wikidata for ROR using Ringgold', 'Accept': 'application/json'}
+2024-12-12 11:26:10,829 - build_graph_logs - INFO - Successfully fetched data from https://query.wikidata.org/sparql (Status: 200)
+2024-12-12 11:26:10,829 - build_graph_logs - INFO - Found ROR ID https://ror.org/02nv7yv05 for Ringgold ID 28334.
+2024-12-12 11:26:10,829 - build_graph_logs - INFO - Starting to extract ROR for the organization: Technische Universität Bergakademie Freiberg
+2024-12-12 11:26:10,829 - build_graph_logs - INFO - Found identifier: {'@type': 'PropertyValue', 'propertyID': 'RINGGOLD', 'value': '26545'}
+2024-12-12 11:26:10,829 - build_graph_logs - INFO - Processing identifier with propertyID: RINGGOLD, value: 26545
+2024-12-12 11:26:10,829 - build_graph_logs - INFO - Identifier is a Ringgold identifier. Querying ROR for Ringgold: 26545
+2024-12-12 11:26:10,829 - build_graph_logs - INFO - Starting query for Ringgold ID 26545 in Wikidata.
+2024-12-12 11:26:10,829 - build_graph_logs - INFO - Starting request to https://query.wikidata.org/sparql with headers: {'User-Agent': 'Python script to query Wikidata for ROR using Ringgold', 'Accept': 'application/json'}
+2024-12-12 11:26:11,048 - build_graph_logs - INFO - Successfully fetched data from https://query.wikidata.org/sparql (Status: 200)
+2024-12-12 11:26:11,048 - build_graph_logs - INFO - Found ROR ID https://ror.org/031vc2293 for Ringgold ID 26545.
+2024-12-12 11:26:13,191 - build_graph_logs - INFO - Contributor Ahmad Zainul Ihsan added to the graph.
+2024-12-12 11:26:13,191 - build_graph_logs - INFO - Starting request to https://api.github.com/users/saidfathalla with headers: {'Authorization': '***HIDDEN***'}
+2024-12-12 11:26:13,477 - build_graph_logs - INFO - Successfully fetched data from https://api.github.com/users/saidfathalla (Status: 200)
+2024-12-12 11:26:13,477 - build_graph_logs - INFO - Looking up ORCID for contributor: Said Fathalla
+2024-12-12 11:26:13,477 - build_graph_logs - INFO - Starting request to https://pub.orcid.org/v3.0/search/?q=given-names:Said+AND+family-name:Fathalla with headers: {'Accept': 'application/json', 'Authorization': '***HIDDEN***'}
+2024-12-12 11:26:13,935 - build_graph_logs - INFO - Successfully fetched data from https://pub.orcid.org/v3.0/search/?q=given-names:Said+AND+family-name:Fathalla (Status: 200)
+2024-12-12 11:26:13,935 - build_graph_logs - INFO - Fetching ORCID data for: Said Fathalla (0000-0002-2089-6364)
+2024-12-12 11:26:13,935 - build_graph_logs - INFO - Starting request to https://pub.orcid.org/v3.0/0000-0002-2089-6364 with headers: {'Accept': 'application/ld+json', 'Authorization': '***HIDDEN***'}
+2024-12-12 11:26:14,454 - build_graph_logs - INFO - Successfully fetched data from https://pub.orcid.org/v3.0/0000-0002-2089-6364 (Status: 200)
+2024-12-12 11:26:14,454 - build_graph_logs - INFO - Updating organization data for contributor: Said Fathalla
+2024-12-12 11:26:16,568 - build_graph_logs - INFO - Contributor Said Fathalla added to the graph.
+2024-12-12 11:26:20,589 - build_graph_logs - INFO - Repository dislocation-ontology added to the graph.
+2024-12-12 11:26:20,589 - build_graph_logs - INFO - Graph building process completed successfully.
