@@ -53,7 +53,7 @@ def build_graph_from_github_org(github_org_name, corresponding_ror_id, github_to
     repos = fetch_github_repos(github_org["repos_url"], github_token, logger)
     logger.info(f"Found {len(repos)} repositories for the organization.")
 
-    for repo in repos[:1]:
+    for repo in repos:
         # Step 4: Convert the repository data to schema.org SoftwareSourceCode format
         logger.info(f"Processing repository: {repo.get('name', 'Unknown Name')}")
         source_code = github_repo_to_SoftwareSourceCode(repo)
